@@ -15,12 +15,12 @@ public class CreateLeadPage extends ProjectMethods{
 		PageFactory.initElements(driver,this);
 	}	
 	@FindBy(how=How.ID,using="createLeadForm_companyName")
-	private WebElement elecName;
+	private WebElement elecName1;
 	
 	@Then("enter company name")
 	
 	public CreateLeadPage enterCompanyName(String data) {
-		type(elecName, data);
+		type(elecName1, data);
 		return this ;
 	}
 	@FindBy(how=How.ID,using="createLeadForm_firstName")
